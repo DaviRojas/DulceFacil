@@ -1,0 +1,16 @@
+﻿using DulceFacil.Dominio.Modelos.Abstracciones;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DulceFacil.Infraestructura.AccesoDatos.Repositorio
+{
+    public class Detalle_PedidoImpl : RepositorioImpl<Detalle_pedido>, IDetalle_pedidoRepositorio
+    {
+        public Detalle_PedidoImpl(DulceFacil2DBContext dBContext) : base(dBContext)
+        {
+        }
+    }
+}
